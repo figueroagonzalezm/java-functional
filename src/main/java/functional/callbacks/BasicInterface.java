@@ -1,4 +1,4 @@
-package callbacks;
+package functional.callbacks;
 
 public interface BasicInterface {
     void saySomething();
