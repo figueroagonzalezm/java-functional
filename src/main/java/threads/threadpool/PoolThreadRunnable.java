@@ -4,11 +4,11 @@ import java.util.concurrent.BlockingQueue;
 
 public class PoolThreadRunnable implements Runnable {
     private Thread thread = null;
-    private BlockingQueue taskQueue = null;
+    private BlockingQueue<Runnable> taskQueue = null;
     private boolean isStopped = false;
 
 
-    public PoolThreadRunnable(BlockingQueue queue) {
+    public PoolThreadRunnable(BlockingQueue<Runnable> queue) {
         this.taskQueue = queue;
     }
 
